@@ -66,6 +66,9 @@ body.innerText = data.email.body;
 let send = document.getElementById("send");
 send.value = data.email.buttonText;
 
+let formTitle = document.getElementById("formTitle");
+formTitle.innerText = data.formDescription;
+
 function onSubmit() {
   console.log("submit");
   let name = document.getElementById("name");
