@@ -48,14 +48,14 @@ data.email.to.forEach((email) => {
 });
 document.getElementById("to").appendChild(toList);
 
-var ccList = document.createElement("UL");
-data.email.cc.forEach((email) => {
-  var li = document.createElement("LI");
-  var text = document.createTextNode(email);
-  li.appendChild(text);
-  ccList.appendChild(li);
-});
-document.getElementById("cc").appendChild(ccList);
+// var ccList = document.createElement("UL");
+// data.email.cc.forEach((email) => {
+//   var li = document.createElement("LI");
+//   var text = document.createTextNode(email);
+//   li.appendChild(text);
+//   ccList.appendChild(li);
+// });
+// document.getElementById("cc").appendChild(ccList);
 
 let subject = document.getElementById("subject");
 subject.innerText = data.email.subject;
