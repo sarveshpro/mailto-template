@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Maito Template</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <noscript>Sorry, your browser does not support JavaScript!</noscript>
-        <div class="container">
+
+<head>
+    <title>Maito Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <div class="container">
         <h1 id="title" class="title">
         </h1>
-        <image id="image" class="image"/>
-        <div id="desc" class="desc"></div>
+     
+        <image id="image" class="image" />
+        <div class="description">
+            <h1>Description
+            </h1>
+            <div id="desc" class="desc"></div>
+            
+        </div>
         <div class="email-content">
             <div class="emails">
                 <div id="to" class="to">
-                    <h3>To</h3>
+                    <h3>Email will be send to:</h3>
                     <!-- to emails -->
                 </div>
                 <!-- <div id="cc" class="cc">
@@ -24,19 +34,22 @@
                     <h3>BCC</h3>
                 </div> -->
             </div>
+            <h3>Subject:</h3>
             <div id="subject" class="subject"></div>
+            <h3>Body:</h3>
             <div id="body" class="body"></div>
         </div>
+        <h3 id="formTitle" class="formTitle"></h3>
         <div class="form">
-            <h3 id="formTitle" class="formTitle"></h3>
             <input type="text" name="name" id="name" class="input-field" placeholder="Name" required />
             <input type="email" name="email" id="email" class="input-field" placeholder="Email" required />
             <input type="text" name="pin" id="pin" class="input-field" placeholder="Pin Code" />
             <input type="tel" name="phone" id="phone" class="input-field" placeholder="Phone" />
-            <input type="button" name="send" id="send" onclick="onSubmit()" class="input-field" />
+            <input class="submit-button" type="button" name="send" id="send" onclick="onSubmit()" class="input-field" />
         </div>
     </div>
-        <script src="./data.js"></script>
-        <script src="./script.js"></script>
-    </body>
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+</body>
+
 </html>
