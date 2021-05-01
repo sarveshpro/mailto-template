@@ -10,7 +10,7 @@ basic template to create a email campaign. just modify the `data.js` and deploy!
 
 `title` supports only text
 
-`description` supports text and can also render HTML
+`description` supports text but can also render HTML
 
 `to`,`cc`,`bcc` are arrays of email strings, set [] for none
 
